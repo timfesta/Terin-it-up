@@ -14,7 +14,7 @@
 	    	<div class="navbar-header">
 	    		<ul class="nav navbar-nav pull-left">
 	    			<!-- home -->
-	    			<li>Home</li>
+	    			<li><%= link_to "Home", root_path, class: "btn navbar-btn navbar-left btn-primary" %></li>
 	    		</ul>
 	    	    	
 	    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -25,7 +25,13 @@
 	    	</div>
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<ul class="nav navbar-nav pull-right">
-	    			<!-- log in / log out -->
+	    			<% if logged_in? %>
+						<li><%= link_to "Profile", profile_path, class: "btn navbar-btn navbar-right btn-primary" %></li>	
+						<li><%= link_to "Log out", logout_path, class: "btn navbar-btn navbar-right btn-primary" %></li>								
+					<% else %> 
+						<%= link_to "Login", login_path, class: "btn navbar-btn navbar-right btn-primary" %>
+						<%= link_to "Sign Up", signup_path, class: "btn navbar-btn navbar-right btn-primary" %>
+					<% end %>
 	    		</ul>
 	    	</div>
 		</div>
