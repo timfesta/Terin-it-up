@@ -49,11 +49,11 @@ ul.social-network li {
 }
 /* change to Instagram's color*/
 .social-network a.icoInstagram:hover {
-	background-color:#0590B8;
+	background-color:#8a3ab9;
 }
 /* change to Pinterest's color*/
 .social-network a.icoPinterest:hover {
-	background-color:#007bb7;
+	background-color:#bd081c;
 }
 
 .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i, .social-network a.icoInstagram:hover i,
