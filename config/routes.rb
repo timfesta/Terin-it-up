@@ -14,6 +14,7 @@ Rails.application.routes.draw do
   	get 'top' => 'statics#top'
   	resources :statics
   	
-  	root 'statics#home'
+  	# root 'statics#home'
+  	root 'pages#home'
   
 end
