@@ -9,6 +9,9 @@ ul.no-indent {
     padding-left: 0px;
 }
 
+#home {
+    background-color: none;
+}
 .glyphicon {
     margin-right: 10px;
 }

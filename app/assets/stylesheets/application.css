@@ -107,10 +107,20 @@ a.socialIcon:hover, .socialHoverClass {
 	transition: all 0.8s;
 }
 
-a {
+a.icoFacebook {
  background-color: #D3D3D3;   
 }
 
+a.icoTwitter {
+ background-color: #D3D3D3;   
+}
 
+a.icoInstagram {
+ background-color: #D3D3D3;   
+}
+
+a.icoPinterest {
+ background-color: #D3D3D3;   
+}
 
 
