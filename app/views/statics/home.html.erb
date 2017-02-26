@@ -2,61 +2,40 @@
     <img class="img-responsive", id="image" src="./assets/lake.jpg" width="100%" height="100">
 </div>
 
-<!-- Top Sellers -->
 <div class="container">
 	<div class="row">
 		<div class="col-md-4 col-md-offset-4">
 			<center>
-				<h2>Top Sellers</h2>
+				<h2>Templates</h2>
 			</center>	
 		</div>
 		<div class="col-md-4"></div>
 	</div>
-		<br>		
-	<div class="row">
+		<br>	
+</div>	
+
+
+	<div class="row" id="templates">
+		<% @products.each do |product| %>
 		<div class="col-md-3">
-			<center>Product</center>
+			<a href="<%= product_path(product) %>">
+				<div class="product-image-container">
+					<img src="<%= asset_path product.image_name %>"  alt="<%= product.title %>"/>
+					<center>
+						<p>$<%= product.price %></p>
+						<p><%= product.title %></p>	
+					</center>
+					
+				</div>
+					
+			</a>
 		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
+		<% end %>
 	</div>
+
 </div>	
 	<br>
 
-<!-- New Products -->
-<div class="container">
-	<div class="row">
-		<div class="col-md-4 col-md-offset-4">
-			<center>
-				<h2>New</h2>
-			</center>	
-		</div>
-		<div class="col-md-4"></div>
-	</div>
-		<br>		
-	<div class="row">
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-		<div class="col-md-3">
-			<center>Product</center>
-		</div>
-	</div>
-</div>	
-	<br>
 
 
 

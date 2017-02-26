@@ -1,6 +1,7 @@
 class ChargesController < ApplicationController
 
 	def create
+		product = Product.find(params[:product_id]) 
 	  # Amount in cents
 	 
 
@@ -11,11 +12,15 @@ class ChargesController < ApplicationController
 
 	  charge = Stripe::Charge.create(
 	    :customer    => customer.id,
-	    :amount      => params[:amount],
+	    :amount      => product.price_in_cents,
 	    :description => 'Rails Stripe customer',
 	    :currency    => 'usd'
 	  )
+	  purchase = Purchase.create(email: params[:stripeEmail], card: params[:stripeToken], 
+	  	amount: product.price_in_cents, description: charge.description, currency: charge.currency,
+	  	customer_id: customer.id, product_id: product.id, uuid: SecureRandom.uuid)
 
+	  redirect_to purchase
 	rescue Stripe::CardError => e
 	  flash[:error] = e.message
 	  redirect_to new_charge_path

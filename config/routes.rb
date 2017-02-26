@@ -10,13 +10,10 @@ Rails.application.routes.draw do
 
 	get 'topseller' => 'photos#top_templates'
 	resources :photos
-  
-  	get 'top' => 'statics#top'
-  	resources :statics
-  	
-  	# root 'statics#home'
-  	root 'pages#home'
 
   	resources :charges
+  	resources :purchases, only: [:show]
+  	resources :products 
   
+  	root 'statics#home'
 end
