@@ -30,7 +30,6 @@
             <button id="btn-buy" type="button" class="btn btn-primary"><h4>Buy This!</h4></button>
         </center>
         
-
       <script>
             var handler = StripeCheckout.configure({
               key: '<%= Rails.configuration.stripe[:publishable_key] %>',
@@ -44,21 +43,13 @@
               handler.open({
                 name: 'One month',
                 description: '<%= @product.title %> ($<%= @product.price %>)',
-                amount: 499
+                amount: <%= @product.price_in_cents %>
             });
             e.preventDefault();
            })
            </script>
       <% end %>
   </div>
-          
-
- 
-            
-
-	            
-     
-
 
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
