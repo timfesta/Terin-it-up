@@ -1,11 +1,19 @@
-    <section id="content-details" class="row clearfix">
-        <article id="details-article" class="col-sm-8">
-            <h1 id="article-title"><%= @product.title %><span class="font-weight-light"><%= @product.subtitle %></span></h1>
-           
+  <div>
+      <center>
+          <h1><%= @product.title %> </h1> 
+      </center>   
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="">
+              <img src="<%= asset_path @product.image_name %>  ">
+          </div>
+      </div>
+      
+  </div>
+          
 
-        <%= raw @product.description %>
-        </article>
-        <aside id="details-aside" class="col-sm-4">
+ 
             
 
 	            <%= form_tag charges_path, id:'chargeForm' do %>
@@ -43,12 +51,13 @@
               	   })
               	   </script>
 	            <% end %>
+
+
             <ul id="details-infobox" class="list-group">
               <li class="list-group-item active clearfix">Info</li>
               <li class="list-group-item"><%= @product.info %></li> 
             </ul>
-        </aside>
-    </section>
+     
 
 
 <!-- Scripts -->
