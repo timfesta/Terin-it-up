@@ -9,31 +9,42 @@
 				<h2>Templates</h2>
 			</center>	
 		</div>
-		<div class="col-md-4"></div>
+		<div class="col-md-4">
+		</div>
 	</div>
-		<br>	
+	<br>	
 </div>	
-
 
 	<div class="row" id="templates">
 		<% @products.each do |product| %>
 		<div class="col-md-3">
 			<a href="<%= product_path(product) %>">
 				<div class="product-image-container">
-					<img src="<%= asset_path product.image_name %>"  alt="<%= product.title %>"/>
+					<img src="<%= asset_path product.image_name %>" id="picture"/>
 					<center>
 						<p>$<%= product.price %></p>
 						<p><%= product.title %></p>	
 					</center>
-					
-				</div>
-					
+				</div>	
 			</a>
 		</div>
 		<% end %>
 	</div>
-
-</div>	
+	<br>
+<!-- <div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<img class="img-responsive", id="vividkick" src="./assets/favicon.png">	
+			<ul>Vividkick can do this</ul>
+			<ul>And Vividkick can do this</ul>
+			<ul>And Vividkick can that too</ul>
+			
+		</div>
+		
+	</div>
+	
+</div> -->
+	
 	<br>
 
 
