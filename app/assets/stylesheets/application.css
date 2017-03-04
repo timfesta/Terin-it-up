@@ -13,8 +13,24 @@
  *= require_tree .
  *= require_self
  */
+
+ #ciabatta {
+ 	padding-bottom: 0px;
+ }
+ 
  .navbar {
 	margin-bottom: 0px;
+}
+
+.container-fluid{
+	background-color: black;
+	padding: 25px;
+}
+
+#home .home {
+	font-family: 'Merriweather', serif;
+	color: #40E0D0;
+	font-size: 30px;
 }
 
 /*.jumbotron {

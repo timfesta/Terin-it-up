@@ -15,12 +15,12 @@
 	<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </head>
 <body>
-	<nav class="navbar navbar-default navbar-static-top">
+	<nav class="navbar navbar-default navbar-static-top" id="ciabatta">
 		<div class="container-fluid">
 	    	<div class="navbar-header">
 	    		<ul class="nav navbar-nav pull-left">
 	    			<!-- home -->
-	    			<li><%= link_to "Vividkick", root_path, class: "home" %></li>
+	    			<li id="home"><%= link_to "Vividkick", root_path, class: "home" %></li>
 	    		</ul>
 	    	    	
 	    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
