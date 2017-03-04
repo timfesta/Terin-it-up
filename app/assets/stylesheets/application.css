@@ -28,6 +28,13 @@
 	padding-right: 25px;
 }
 
+.hamburger-button {
+	margin-top: 15px;
+	margin-right: 0px;
+	margin-bottom: 15px;
+	margin-left: 15px;
+}
+
 #home .home {
 	font-family: 'PT Sans';
 	color: #40E0D0;
