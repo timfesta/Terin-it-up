@@ -1,6 +1,40 @@
 // Place all the styles related to the statics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-picture .main-image {
+	background-image: url("lake.jpg");
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+}
+
+.main-picture {
+	position: relative;
+}
+
+.right-box {
+	position: absolute;
+	bottom: 35px;
+	right: 40px;
+	width: 265px;
+	background-color: rgba(255, 255, 255, 0.7);
+	padding: 59px 30px 148px;
+	box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.55);
+}
+
+.right-box p {
+	line-height: 24px;
+	font-family: arial;
+	margin-top: 15px;
+}
+
+#image {
+	width: 100%;
+	height: 100;
+
+}
+
 #templates {
 	padding-left: 30px;
 	padding-right: 30px;
