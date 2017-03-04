@@ -24,22 +24,29 @@
 
 .container-fluid{
 	background-color: black;
-	padding: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 }
 
 #home .home {
-	font-family: 'Merriweather', serif;
+	font-family: 'PT Sans';
 	color: #40E0D0;
 	font-size: 30px;
+	font-weight: 900;
+	line-height: 48px;
 }
 
-/*.jumbotron {
-	padding-top: 0px;
-	padding-bottom: 0px;
-	padding-right: 0px;
-	padding-left: 0px;
-	
-}*/
+#hamburger .hamburger {
+	font-family: 'Merriweather', serif;
+	color: #40E0D0; 
+	font-size: 20px;
+	font-weight: 900;
+	line-height: 48px;
+}
+
+#hamburger .hamburger {
+	color: #40E0D0;
+}
 
 #info {
 	padding-left: 0px;
