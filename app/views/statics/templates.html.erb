@@ -1,0 +1,23 @@
+<div class="container">
+	<div class="row">
+		<h1>Templates</h1>
+	</div>
+</div>
+<br>
+<div class="container">
+			<div class="row" id="templates">
+				<% @products.each do |product| %>
+				<div class="col-md-3">
+					<a href="<%= product_path(product) %>">
+						<div class="product-image-container">
+							<img src="<%= asset_path product.image_name %>" id="picture"/>
+							<center>
+								<p id="title">$<%= product.price %></p>
+								<p id="title"><%= product.title %></p>	
+							</center>
+						</div>	
+					</a>
+				</div>
+				<% end %>
+			</div>
+</div>

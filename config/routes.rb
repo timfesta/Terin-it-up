@@ -14,6 +14,9 @@ Rails.application.routes.draw do
   	resources :charges
   	resources :purchases, only: [:show]
   	resources :products 
+
+  	get 'templates' => 'statics#templates'
+  	resources :statics
   
   	root 'statics#home'
 end

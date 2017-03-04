@@ -7,5 +7,9 @@ class StaticsController < ApplicationController
 	def top
 	end
 
+	def templates
+		@products = Product.all
+	end
+
 	
 end

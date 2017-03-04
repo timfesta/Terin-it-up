@@ -32,6 +32,7 @@
 	    	</div>
 	    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	    		<ul class="nav navbar-nav pull-right">
+	    				<li id="hamburger"><%= link_to "Templates", templates_path, class: "hamburger" %></li>	
 	    			<% if logged_in? %>
 						<li id="hamburger"><%= link_to "Profile", profile_path, class: "hamburger" %></li>	
 						<li id="hamburger"><%= link_to "Log out", logout_path, class: "hamburger" %></li>								
