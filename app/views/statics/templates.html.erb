@@ -1,23 +1,34 @@
 <div class="container">
 	<div class="row">
-		<h1>Templates</h1>
+		<div class="col-md-12">
+			<center>
+				<h2>Lightroom Presets</h2>
+			</center>
+			<p>Lightroom presets are a pre-determined position of all or some of the sliders in Lightroom</p>
+		</div>
 	</div>
 </div>
 <br>
-<div class="container">
-			<div class="row" id="templates">
-				<% @products.each do |product| %>
-				<div class="col-md-3">
-					<a href="<%= product_path(product) %>">
-						<div class="product-image-container">
-							<img src="<%= asset_path product.image_name %>" id="picture"/>
-							<center>
-								<p id="title">$<%= product.price %></p>
-								<p id="title"><%= product.title %></p>	
-							</center>
-						</div>	
-					</a>
-				</div>
-				<% end %>
-			</div>
-</div>
+	<div class="row" id="templates">
+		<% @products.each do |product| %>
+		<div class="col-md-3" id="column">
+		<section>
+			<p id="product-title">
+				<h3>
+				<center><%= product.title %></center>
+				</h3>
+			</p>
+			<p id="product-description">Looking for a great preset look no further</p>
+			<br>
+			<a href="<%= product_path(product) %>">
+				<div class="product-image-container">
+					<img src="<%= asset_path product.image_name %>" id="picture"/>
+					<center>
+						<button class="grey-button">BUY NOW $<%= product.price %></button>
+					</center>
+				</div>	
+			</a>
+		</section>
+		</div>
+		<% end %>
+	</div>
