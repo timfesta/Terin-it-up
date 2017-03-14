@@ -40,7 +40,7 @@
         });
         document.getElementById('btn-buy').addEventListener('click', function(e) {
               handler.open({
-                name: 'One month',
+                name: '<%= @product.subtitle %>',
                 description: '<%= @product.title %> ($<%= @product.price %>)',
                 amount: <%= @product.price_in_cents %>
             });
