@@ -24,9 +24,9 @@
         <%= hidden_field_tag 'amount', @product.price_in_cents %>
         <%= hidden_field_tag 'stripeEmail' %>
         <%= hidden_field_tag 'product_id', @product.id %>
-
+        <br>
         <center>
-            <button id="btn-buy" type="button" class="grey-button"><h4>Buy This!</h4></button>
+            <button id="btn-buy" type="button" class="btn btn-primary"><h4>Buy This!</h4></button>
         </center>
         
       <script>

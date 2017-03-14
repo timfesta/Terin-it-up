@@ -38,8 +38,10 @@
 			<a href="<%= product_path(product) %>">
 				<div class="product-image-container">
 					<img src="<%= asset_path product.image_name %>" id="picture"/>
+					<br>
+					<br>
 					<center>
-						<button class="grey-button">BUY NOW $<%= product.price %></button>
+						<button class="btn btn-primary">BUY NOW $<%= product.price %></button>
 					</center>
 				</div>	
 			</a>
