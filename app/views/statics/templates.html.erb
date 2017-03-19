@@ -9,6 +9,9 @@
 	</div>
 </div>
 <br>
+
+<!--------- Section for where the products are shown ------------>
+<div>
 	<div class="row" id="templates">
 		<% @products.each do |product| %>
 		<div class="col-md-3" id="column">
@@ -22,7 +25,7 @@
 			<br>
 			<a href="<%= product_path(product) %>">
 				<div class="product-image-container">
-					<img src="<%= asset_path product.image_name %>" id="picture"/>
+					<img src="<%= asset_path product.image_name %>" class="picture" id="picture"/>
 					<br>
 					<br>
 					<center>
@@ -34,4 +37,21 @@
 		</div>
 		<% end %>
 	</div>
+</div>
 	<br>
+
+
+<script>
+	$(function() {
+		$('.picture').hover( function(){
+			$(this).addClass('transition');
+
+		}, function() {
+			$('.picture').removeClass('transition');
+		});
+	});
+</script>
+
+
+
+

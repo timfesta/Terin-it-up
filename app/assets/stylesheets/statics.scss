@@ -113,6 +113,8 @@ a {
 	padding: 10px 20px 10px;
 }
 
+/*Glyphicons which I currnetly took out*/
+
 .gly {
 	
 	text-align: center;
@@ -133,6 +135,8 @@ a {
 	background-color: #000;
 }
 
+/*Fade in CSS*/
+
  .star {
         visibility: hidden;
     }
@@ -147,3 +151,21 @@ a {
         0%{opacity:0}
         100%{opacity:1}
     }
+
+
+/*on the templates page scrolling over an image making it bigger*/
+
+ .transition {
+    -webkit-transform: scale(1.1); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.picture {
+	/*css to make it bigger*/
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
