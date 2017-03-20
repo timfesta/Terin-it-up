@@ -61,15 +61,26 @@
 
 <!-- Section explaing what Vividkick does -->
 
-<div class="container" id="smiley">
+<div class="container-fluid" id="smiley">
 	<div class="row" id="star">
-		<div class="col-md-10 col-md-offset-1">
-			<ul><em class="star"> Vividkick allows you to edit your photos to your liking</em></ul>
-			<ul><em class="star"> And Vividkick can do this</em></ul>
-			<ul><em class="star"> And Vividkick can do this</em></ul>
+		<div class="col-md-4">
+			<br>
+			<center>
+				<span class="glyphicon glyphicon-grain" id="grain"></span>
+			</center>
+			 
+		</div>
+		<div class="col-md-8">
+			<ul class="custom-bullet">
+			    <li><h4>Vivid allows you to edit photos to your liking</h4></li>
+			    <li><h4>Lightroom presets are a pre-determined position of all or some of the sliders in Lightroom</h4></li>
+			    <li><h4>Ciabatta</h4></li>
+			</ul>
 		</div>
 	</div>
 </div>
+<br>
+<br>
 
 <!--------- jQuery for fading in -------->
  <script src="//code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -102,10 +113,10 @@
 <script>
 	$(function() {
 	   $('.picture').hover( function(){
-	      $(this).css('background-color', '#D3D3D3');
+	      $(this).css('background-color', '#92d7d0');
 	   },
 	   function(){
-	      $(this).css('background-color', '#000');
+	      $(this).css('background-color', '#ffffff');
 	   });
 	});
 </script>

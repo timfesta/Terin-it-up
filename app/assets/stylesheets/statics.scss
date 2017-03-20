@@ -113,15 +113,27 @@ a {
 	padding: 10px 20px 10px;
 }
 
-/*Glyphicons which I currnetly took out*/
 
-.gly {
-	
-	text-align: center;
+/*Glyphicons */
+
+
+.custom-bullet li {
+    display: block;
 }
 
-#gly {
-	text-align: center;
+.custom-bullet li:before {    
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+    color: #40E0D0;
+}
+
+/*grain Glyphicon*/
+#grain {
+	font-size: 40px;
 }
 
 .menuItem {
@@ -169,3 +181,4 @@ a {
 	-o-transition: all .4s ease-in-out;
 	-ms-transition: all .4s ease-in-out;
 }
+
