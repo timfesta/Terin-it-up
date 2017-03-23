@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   	resources :products 
 
   	get 'templates' => 'statics#templates'
+  	get 'contact' => 'statics#contact'
   	resources :statics
   
   	root 'statics#home'

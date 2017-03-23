@@ -11,5 +11,8 @@ class StaticsController < ApplicationController
 		@products = Product.all
 	end
 
+	def contact
+	end
+
 	
 end
