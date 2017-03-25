@@ -63,10 +63,16 @@
 #title {
 	font-family: 'PT Sans', sans-serif;
 	color: #25383C;
+	text-decoration: none;
 }
 
 a {
 	font-family: 'PT Sans', sans-serif;
+	color: #25383C;
+}
+
+a:hover {
+	text-decoration: none;
 	color: #25383C;
 }
 
