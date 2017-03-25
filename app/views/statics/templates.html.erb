@@ -14,31 +14,39 @@
 <div>
 	<div class="row" id="templates">
 		<% @products.each do |product| %>
-		<div class="col-md-3" id="column">
-		<section>
-			<p id="product-title">
-				<h3>
-				<center><%= product.title %></center>
-				</h3>
-			</p>
-			<p id="product-description">Looking for a great preset look no further</p>
-			<br>
-			<a href="<%= product_path(product) %>">
-				<div class="product-image-container">
-					<img src="<%= asset_path product.image_name %>" class="picture" id="picture"/>
-					<br>
-					<br>
-					<center>
-						<button class="btn btn-primary">LEARN MORE</button>
-					</center>
-				</div>	
-			</a>
-		</section>
+		<div class="col-md-4" id="column">
+			<section>
+				<a href="<%= product_path(product) %>">
+					<div class="product-image-container">
+						<br>
+						<br>
+						<br>
+						<center>
+							<img src="<%= asset_path product.image_name %>" class="picture" id="picture"/>
+						</center>
+						
+					</div>	
+				</a>
+				<br>
+				<br>
+				<p id="product-title">
+					<h3>
+						<center><%= product.title %></center>
+					</h3>
+				</p>
+				<p>
+					<h3>
+						<center>$<%= product.price %></center>
+					</h3>
+				</p>
+				<br>
+			</section>
 		</div>
 		<% end %>
 	</div>
 </div>
-	<br>
+<br>
+
 
 <!-- jQuery to make pictures bigger -->
 
