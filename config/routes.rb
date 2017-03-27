@@ -19,6 +19,7 @@ Rails.application.routes.draw do
   	get 'contact' => 'statics#contact'
   	get 'about' => 'statics#about'
   	get 'socialmedia' => 'statics#socialmedia'
+    get 'tutorials' => 'statics#tutorials'
   	resources :statics
   
   	root 'statics#home'
