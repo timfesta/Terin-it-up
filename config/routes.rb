@@ -17,6 +17,7 @@ Rails.application.routes.draw do
 
   	get 'templates' => 'statics#templates'
   	get 'contact' => 'statics#contact'
+  	get 'about' => 'statics#about'
   	resources :statics
   
   	root 'statics#home'
