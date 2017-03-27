@@ -66,10 +66,10 @@
 				<center><%= link_to "Contact Us", contact_path %></center>
 			</div>
 			<div class="col-md-3">
-				<% if logged_in? %>
+				<% if current_user %>
 					<center><%= link_to "Account", profile_path %></center>
 				<% else %>
-					<center><%= link_to "tnuoccA", root_path %></center>
+					<center><%= link_to "Account", root_path %></center>
 				<% end %>
 				
 			</div>

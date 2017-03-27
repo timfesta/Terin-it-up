@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 		
 		def new
 			if current_user
-				redirect_to profile_path
+				redirect_to profile_path(current_user)
 			else
 				@user = User.new
 			end
@@ -10,7 +10,7 @@ class UsersController < ApplicationController
 
 		def create
 			if current_user
-				redirect_to profile_path
+				redirect_to profile_path(current_user)
 			else
 				user = User.new(user_params)
 				if user.save
