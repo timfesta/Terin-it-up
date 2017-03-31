@@ -44,7 +44,8 @@
 			<a href="<%= product_path(product) %>">
 				<div class="product-image-container" id="star">
 					<div class="star">
-						<img src="<%= asset_path product.image_name %>" class="picture" id="picture"/>
+						<img src="/assets/<%= product.image_name %>" class="picture" id="picture">
+						
 						<br>
 						<br>
 						<center>
