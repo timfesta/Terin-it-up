@@ -14,5 +14,8 @@ class StaticsController < ApplicationController
 	def contact
 	end
 
+	def shoppingcart
+	end
+
 	
 end
