@@ -20,7 +20,6 @@ Rails.application.routes.draw do
   	get 'about' => 'statics#about'
   	get 'socialmedia' => 'statics#socialmedia'
     get 'tutorials' => 'statics#tutorials'
-    get 'shoppingcart' => 'statics#shoppingcart'
   	resources :statics
   
   	root 'statics#home'

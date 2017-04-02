@@ -8,7 +8,7 @@
 
 firstPhoto = Product.create(title: "Russian Hill", 
  subtitle: "Russian Hill", image_name: "bay.jpg",
- price: "5.99", sku: "sfOne", info: "Scenic", download_url: "https://s3-us-west-2.amazonaws.com/vividkick/russian_hill.png", 
+ price: "5.99", sku: "sfOne", info: "Scenic", download_url: "https://s3-us-west-2.amazonaws.com/vividkick/VK+Wedding+Foilage.lrtemplate", 
   description: %{<p>sf</p>
  })
 
@@ -17,3 +17,4 @@ secondPhoto = Product.create(title: "Golden Gate",
  price: "4.99", sku: "sfTwo", info: "Scenic", download_url: "https://s3-us-west-2.amazonaws.com/vividkick/ggbridge.jpg", 
   description: %{<p>The Golden Gate Bridge</p>
  })
+
